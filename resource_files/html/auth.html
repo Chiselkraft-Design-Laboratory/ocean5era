@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ocean5era</title>
+
+    <style>
+    
+    body, html{
+        width:100%;
+        height: 100%;
+        line-height: 1.6;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        margin: 0;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        height:100%; 
+    }
+    .w-100, row{
+        width: 100%;
+    }
+    .h-100{
+        height: 100%;
+    }
+    .center{
+        justify-content: center;
+        text-align: center;
+    }
+    .pt-5{
+        padding-top: 5rem;
+    }
+    .btn{
+        text-decoration: none;
+        border-radius: 8px;
+        color: #ffffff;
+        background: #000000;
+
+        padding: 16px;
+        margin-left: 8px;
+        margin-right: 8px; 
+    }
+    .btn:hover,
+    .btn:focus{
+        color: #ffffff;
+        background: #f95728;
+    }
+    .pin{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 0.3rem; 
+        margin-right: 0.3rem;
+
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #bcbcbc;
+        width: 1rem;
+        outline: none;
+
+        color: #bcbcbc;
+        font-size: 1.25rem;
+    }
+    </style>
+</head>
+<body>
+<main class="row">
+    <section class="row center pt-5">
+        <img src="\brand-logo.svg" alt="ocean5:era" height="256px">
+    </section>
+    <section class="row">
+        <div class="wrap">
+            <form action="submit" method="POST">
+                <input name="pw" class="pin" type="password" pattern="\d*" maxlength="1">
+                <input name="pw" class="pin" type="password" pattern="\d*" maxlength="1">
+                <input name="pw" class="pin" type="password" pattern="\d*" maxlength="1">
+                <input name="pw" class="pin" type="password" pattern="\d*" maxlength="1">
+                <button class="btn" type="submit">go</button>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>
